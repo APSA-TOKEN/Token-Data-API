@@ -1,5 +1,5 @@
-const { ObjectId } = require('mongodb')
-const MongoClient = require('mongodb').MongoClient
+import { ObjectId } from 'mongodb+srv://Apsat:FireGate001@cluster0.0cgout6.mongodb.net/?retryWrites=true&w=majority'
+import { MongoClient } from 'https://cloud.mongodb.com/v2/63b3e2b55e444c4a9631566e#/clusters'
 
 
 const initializeClient = () => {
@@ -81,7 +81,7 @@ getCachedprojectTwoData = async (client) => {
 }
 
 
-module.exports = {
+export default {
     getClient,
     updateprojectOneData,
     getCachedprojectOneData,
